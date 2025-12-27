@@ -1,0 +1,19 @@
+{
+  "name": "nio-menu-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "d1:schema:local": "wrangler d1 execute nio-db --file=./schema.sql",
+    "d1:seed:local": "wrangler d1 execute nio-db --file=./seed.sql",
+    "d1:schema": "wrangler d1 execute nio-db --file=./schema.sql --remote",
+    "d1:seed": "wrangler d1 execute nio-db --file=./seed.sql --remote",
+    "d1:seed:test": "wrangler d1 execute nio-db --file=./seed_test.sql --remote"
+  },
+  "dependencies": {
+    "itty-router": "^5.0.18"
+  }
+}
+

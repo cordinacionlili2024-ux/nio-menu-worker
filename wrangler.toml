@@ -1,0 +1,18 @@
+name = "nio-menu-api"
+main = "src/worker.js"
+compatibility_date = "2025-12-27"
+
+[vars]
+PUBLIC_R2_BASE = "https://pub-91ac870a0037459484bc1d3807bd4895.r2.dev"
+
+
+
+[[d1_databases]]
+binding = "DB"
+database_name = "nio-db"
+database_id = "2793aabf-db4f-455a-8048-067ba149b364"
+
+# Si quieres validar llamadas del bot con token simple:
+# (recomendado mínimo)
+# En Cloudflare -> Settings -> Variables -> agrega BOT_API_TOKEN
+
